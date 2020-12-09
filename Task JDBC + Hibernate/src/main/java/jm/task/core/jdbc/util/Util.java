@@ -3,9 +3,6 @@ package jm.task.core.jdbc.util;
 import jm.task.core.jdbc.model.User;
 import org.hibernate.SessionFactory;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
 import java.util.Properties;
 import java.util.TimeZone;
 
@@ -15,8 +12,8 @@ import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
 
 public class Util {
+    
     // реализуйте настройку соеденения с БД
-//**********************************************************************************
     private static SessionFactory sessionFactory;
 
     public static SessionFactory getSessionFactory() {
